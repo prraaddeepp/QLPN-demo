@@ -23,7 +23,7 @@ def experiment(m=8, w=1, d_max=20, shots=20000, seed=42):
             for __ in range(d):
                 # pick a qubit to flip uniformly at random
                 if rng.integers(0, m) == 0:
-                    # flip the label qubit (we only care if it's qubit 0)
+                    # flip the parity label bit (empirical tally for ε)
                     f ^= 1
             flips += f
         eps_emp = flips / shots
