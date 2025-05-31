@@ -1,3 +1,8 @@
+"""
+Internal validation script: compares QLPN oracle output to classical parity-flip.
+Not used for final paper results—just for sanity checks.
+"""
+
 import argparse
 import numpy as np
 import matplotlib.pyplot as plt
